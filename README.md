@@ -1,5 +1,5 @@
 # Webapps2023- Django Project
----
+
 ## Overview
 
 This project aims to create an online payment system that allows users to transfer money between their online accounts. Unlike traditional online payment services, the assumption is made that users do not have any bank account connections and start with a fixed amount of money upon registration. 
