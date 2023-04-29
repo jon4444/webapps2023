@@ -1,0 +1,18 @@
+{% extends 'payapp/base.html' %}
+{% load crispy_forms_filters %}
+
+{% block title %}
+    Request Money
+{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <h4>Request Money</h4>
+    <form method="post" class="form-group">
+        {%csrf_token%}
+        {{ form|crispy }}
+        {% comment %} {{ form.as_p }} {% endcomment %}
+        <button type="submit" class="btn btn-success">Request</button>
+    </form>
+{% endblock %}

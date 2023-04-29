@@ -1,0 +1,27 @@
+body {
+    background-image: url('images/bg3.png');
+    {% comment %} background-color: rgba(255, 255, 255); /* White with 50% opacity */ {% endcomment %}
+    {% comment %} background-size: 100% 100%; {% endcomment %}
+    background-size: cover;
+    background-attachment: fixed;
+    {% comment %} background-position: relative; {% endcomment %}
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.7); /* White with 50% opacity */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} 
+
+@media (max-width: 768px) {
+    body {
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+  

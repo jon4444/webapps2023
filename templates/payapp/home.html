@@ -1,0 +1,42 @@
+{% extends 'payapp/base.html' %}
+
+{% block title %}
+    Comment Store Homepage
+{% endblock %}
+
+{% block content %}
+
+<style>
+    h1{
+        text-align: center;
+        vertical-align: middle;
+    }
+    .pill{
+        font-size: 12px;
+        padding: 0.5em 1em;
+    }
+    .container-2{
+       {% comment %} border: 10px solid black; {% endcomment %}
+       max-width: 700px;
+       margin: auto; 
+
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    p{
+        font-size:30px;
+    }
+</style>
+
+
+<div class="container p-5 my-5 bg-dark text-white">
+    <h1>Transfer Funds Hassle Free </h1>
+</div>
+
+<div class="container-2">
+    <p>A trusted destination for Money-Transers,<br> Authorised by FCA, ASIC & FSCA</p>
+    {% comment %} <button class="pill" type="button">Send Money</button> {% endcomment %}
+</div>
+    
+{% endblock %}
